@@ -11,11 +11,11 @@ Link to Videos and Reports
 
 Link to Final Testing Document
 
-#Overview
+# Overview
 
 Welcome to the Curio Testing repository <..>
 
-#Frontend Tests
+# Frontend Tests
 
 The frontend tests in this repository are written using Cypress, To run the frontend tests.
 Required:
@@ -32,6 +32,6 @@ Click on E2E tests, then choose your preferred browser to run tests inside.
 
 4-you can run the tests headless using npx cypress run.
 
-#Link to Videos and Reports
+# Link to Videos and Reports
 
 
