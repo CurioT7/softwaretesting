@@ -1,0 +1,65 @@
+{
+    "loginPage": {
+      "validEmail": "maramtarek377@gmail.com",
+      "username": "OpenBrick9844",
+      "notEmail": "notEmail",
+      "validPassword": "1234567m",
+      "wrongPassword": "12345678",
+      "invalidEmail": "dummy@dummy.com",
+      "invalidusername": "OpenBrick9sjs",
+      "invalidPasswordTooSmall": "1"
+  
+    },
+    "changePassword": {
+      "currentPassword": "1234567m",
+      "newPassword": "1234567y",
+      "confirmPassword": "1234567y",
+      "changePasswords":"wjzdnh5",
+      "invalidPassword": "1",
+      "new1confirm":"123467y", 
+      "new1confirm2":"123467y" 
+
+    },
+    "changeemail": {
+      "wrongPass": "1234",
+      "rightpass": "1234567y",
+      "invalidPassword": "11234567m",
+      "acceptedemail": "dummy134@dummy.com",
+      "notemail":"sbhgh.com",
+      "notacceptemail":"maramtarek377@gmail.com"
+
+    },
+    
+    "displayname": {
+      "accepted": "1234",
+      "accept2": "1234567yffffffffffffffffffffff",
+      "invalid": "112345dtuyyyyyyyyyyyyyyyyyyyyyyyyyyy67m"
+      
+    },
+    "about": {
+      "accept": "1234dtjcgjudyj",
+      "invalidated": "112345dtuyyyyyyyyyyyyyyyjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjyyyyyyyyyyyy67m"
+      
+    },
+    "profileaddlink": {
+      "acCepted": "1234",
+      "noaccept2": "1234567yjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjkkkgchjjjjjjjjjjjjjjjjjffffffffffffffffffffff"
+      
+      
+    },
+    "safetyblockuser": {
+      "acceptedusername": "ali1213",
+      "nousername": "1234567yfffffffffff"
+     
+      
+    },
+    "safetymutecommunity": {
+      "acceptedcommunity": "ali1213",
+      "nocommunity": "1234567yfffffffffff"
+     
+      
+    },
+    
+    "email": "hello@cypress.io",
+    "body": "Fixtures are a great way to mock data for responses to routes"
+  }
