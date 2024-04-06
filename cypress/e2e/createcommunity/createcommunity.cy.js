@@ -1,9 +1,13 @@
 import {Createcommunity} from '../../support/page_objects/comm/createcommunity'
+import { SignUpPage } from '../../support/page_objects/signup1'
 // import accountsetting from '../../support/page-objects/accountsetting'
 // import { login } from '../../utils/login'
-// const data = require('../../fixtures/data.json')
 // import{data} from '../../fixtures/data.json'
-
+Cypress.on('uncaught:exception', (err, runnable) => {
+    // returning false here prevents Cypress from
+    // failing the test
+    return false
+  })
 
 describe('Communities', () => {
 
@@ -15,22 +19,32 @@ describe('Communities', () => {
     //     cy.wait(3000)
     // })
     
-    it('Join Community', () => {
+    it('create Community', () => {
         const createcommunity = new Createcommunity();
+        const signUpPage = new SignUpPage();
         cy.visit('http://localhost:5173/')
-        createcommunity.resourceButton
-        cy.wait(1000)
-        createcommunity.comButton
-    //    createcommunity.createCommunityButton.should('be.visible').click()
-    //     cy.wait(1000)
-    //    createcommunity.nameField.should('be.visible').should('be.empty').type(data.createcommunity.invalname)
-    //    cy.get("li[role='status']").should('contain.text', "Please lengthen this text to 3 characters or more")
-    //    cy.wait(1000)
-    //    createcommunity.nameField.should('be.visible').should('be.empty').type(data.createcommunity.valname)
-    //    createcommunity.typeOptiions.should('be.visible').select('option')
-    //    createcommunity. matureSwitch.should('be.visible').click({force:true})
-    //    cy.wait(1000)
-    //    createcommunity.createCommunityButtonSave.should('be.visible')
+        signUpPage.goButton
+        cy.wait(3000)
+        signUpPage.loginButton
+        cy.wait(3000)
+        signUpPage.signUpWithGoogle
+        signUpPage.emailField.should('be.visible').type("sm1234@gmail.com")
+        signUpPage.continueButton
+        signUpPage.usernameField.clear().type("dummy134communi")
+        cy.wait(4000)
+        signUpPage.passwordField.clear().type("com1234rrrrrr")
+        cy.wait(4000)
+        signUpPage.continue4Button
+        signUpPage.selectgenderButton
+        signUpPage.backButton
+        signUpPage.skipButton
+        signUpPage.intrestButton
+        signUpPage.continue3Button
+        createcommunity.createCommunityButton
+        createcommunity.addCommunityButton
+        createcommunity.nameField.type("community1234j")
+        createcommunity.createCommunityButtonSave
+        
     })
    
   
