@@ -14,4 +14,7 @@ export class Createcommunity{
     get privateButton(){ return cy.get(':nth-child(2) > :nth-child(3) > .ms-auto').click()}
     get restrictedButton(){ return cy.get(':nth-child(3) > :nth-child(2) > :nth-child(2) > .ms-auto').click()}
     get matureSwitch(){return cy.get('form > :nth-child(5)').click()}
+    get view2(){return cy.get('.css-1g8m9e5 > [data-testid="ps-submenu-content-test-id"] > .css-ewdv3l > :nth-child(2) > [data-testid="ps-menu-button-test-id"] > .ps-menu-label').click()}
+    get view(){return cy.get('.css-1g8m9e5 > [data-testid="ps-submenu-content-test-id"] > .css-ewdv3l > :nth-child(3) > [data-testid="ps-menu-button-test-id"] > .ps-menu-label').click()}
 }
+export default new Createcommunity();

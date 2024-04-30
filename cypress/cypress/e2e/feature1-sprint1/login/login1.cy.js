@@ -22,8 +22,9 @@ describe('login page', () => {
     loginpagepo.inputFieldLoginUsername.should('be.visible').clear().type('maramtarek2')
      loginpagepo.inputFieldLoginPassword.should('be.visible').clear().type("12as")
     loginpagepo.loginButton
-    loginpagepo.inputFieldLoginPassword.should('be.visible').clear().type("maram1212")
+    loginpagepo.inputFieldLoginPassword.should('be.visible').clear().type("sama1212")
       loginpagepo.loginButton
+      cy.wait(2000)
       cy.url().should('eq', 'http://localhost:5173/');
     })
     

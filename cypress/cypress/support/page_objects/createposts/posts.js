@@ -1,15 +1,15 @@
 export class Post{
 
-    get createButton(){ return cy.get('.ps-menu-root > :nth-child(1) > :nth-child(4) > [data-testid="ps-menu-button-test-id"]').click() }
+    get createButton(){ return cy.get('.css-1iujvyu > [data-testid="ps-menu-button-test-id"] > .ps-menu-label').click() }
     get selectButton(){return cy.get('.inner-div').click()}
-    get nameselected(){ return cy.get('[style="border-bottom: 1px solid rgb(135, 138, 140); margin-bottom: 0px;"] > :nth-child(1) > [style="display: flex; align-items: center; margin-top: 7px;"] > div').click({force:true}) }
+    get nameselected(){ return cy.get('.dropdown-username').select('u/maramtarek2') }
     
     get title(){return cy.get('.custom-textarea')}
-    get discription(){ return cy.get('.Text-optional-textarea') }
-    get boldButton(){ return cy.get(':nth-child(1) > .chakra-button > .fa-solid').click()}
-    get ibutton(){return cy.get(':nth-child(2) > .chakra-button').click()}
-    get putLink(){return cy.get(':nth-child(3) > .chakra-button > .fa-solid').click()}
-    get shutButton(){return cy.get(':nth-child(4) > .chakra-button > .fa-solid').click()}
+    get discription(){ return cy.get('.ql-editor')}
+    get boldButton(){ return cy.get('.ql-bold').click()}
+    get ibutton(){return cy.get('.ql-italic').click()}
+    get putLink(){return cy.get('.ql-link').click()}
+    get shutButton(){return cy.get('.ql-strike').click()}
     get spaceButton(){return cy.get(':nth-child(5) > .chakra-button').click()}
     get smalllargecharButton(){return cy.get(':nth-child(6) > .chakra-button').click()}
     get ocButton(){return cy.get('.button-group-edit > :nth-child(1)').click()}

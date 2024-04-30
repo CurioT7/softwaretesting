@@ -1,13 +1,13 @@
 import { login1 } from '../../../utils/login'
 import {UnSave}from '../../../support/page_objects/save-unsave/unsave'
 describe('unsave', () => {
-    
+    //lazem n7ot al path al gedid lma al post y7amel
     beforeEach(() => {
         // Login before each test
         
         cy.viewport(1600, 1660)
           
-        login1('maramtarek2', 'maram1212');
+        login1('maramtarek2', 'sama1212');
        // cy.visit('http://localhost:5173/settings/account')
     });
 

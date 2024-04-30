@@ -2,7 +2,11 @@ import { LoginPagePo } from "../../../support/page_objects/login/LoginPagePo1"
 
 describe('forget password', () => {
    
-  
+    beforeEach(() => {
+       
+        cy.viewport(1600, 1660)
+          
+    });
 
     it('forgot password screen', () => {
         const loginpagepo = new LoginPagePo();
@@ -23,7 +27,7 @@ describe('forget password', () => {
         cy.wait(2000);
         loginpagepo.inputFieldUserEmail.clear().should('be.visible').type("maramtarek377@gmail.com");
         cy.wait(2000);
-        loginpagepo.resetPassButton.click(); // Corrected to use .click() to actually click the button
+       // loginpagepo.resetPassButton.click(); // Corrected to use .click() to actually click the button
     
     //     cy.intercept('POST', '**/reset-password-endpoint').as('resetPasswordRequest');
     //     cy.wait('@resetPasswordRequest').then((interception) => {

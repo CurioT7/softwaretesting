@@ -1,7 +1,7 @@
 export class LoginPagePo {
     get gotitButton(){return cy.get('.signup-button > .dropdown-toggle').click()}
     get loginRestButton() {return cy.get('.dropdown-menu > .d-flex').click()}
-    get loginButton() {return cy.get('.login_buttons').click()}
+    get loginButton() {return cy.get('.login_buttons').click({force: true})}
     get logbutton(){return cy.get('.login_buttons').click()}
     get googleLoginButton() {  return cy.get('.continue-with-google').click()}
     get appleLoginButton() {  return cy.contains('button', 'connect to apple')}

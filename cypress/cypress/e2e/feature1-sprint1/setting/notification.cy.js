@@ -7,7 +7,7 @@ describe('notification', () => {
         
         cy.viewport(1600, 1660)
           
-        login1('maramtarek2', 'maram1212');
+        login1('maramtarek2', 'sama1212');
        // cy.visit('http://localhost:5173/settings/account')
     });
 

@@ -4,10 +4,10 @@ describe('Follow test site', () => {
     
     beforeEach(() => {
         // Login before each test
-        
+        //lazem n7ot al path al gedid lma al post y7amel
         cy.viewport(1600, 1660)
           
-        login1('maramtarek2', 'maram1212');
+        login1('maramtarek2', 'sama1212');
        // cy.visit('http://localhost:5173/settings/account')
     });
 

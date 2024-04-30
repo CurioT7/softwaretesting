@@ -11,7 +11,12 @@ export class FollowPage{
     get followersUsers(){return cy.get('[data-testid="followers"]')}
     get followingUsers(){return cy.get('[data-testid="following"]')}
     get followerTab(){return cy.get('[data-testid="followingTab"]')}
-   
+    get viewprofile() {
+        return cy.get('.right-item-option > .profileImg').click({ force: true });
+      }
+get profile(){return cy.get('.drop-down-profile-description').click()}      
+get follower(){return cy.get('a > .profileItem').click()}
+get unfollow(){return cy.get(':nth-child(3) > .FollowBtn').click()}
     
  
 }

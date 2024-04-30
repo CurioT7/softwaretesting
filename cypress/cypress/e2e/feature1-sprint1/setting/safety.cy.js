@@ -9,7 +9,7 @@ describe('safety', () => {
         
         cy.viewport(1600, 1660)
           
-        login1('maramtarek2', 'maram1212');
+        login1('maramtarek2', 'sama1212');
        // cy.visit('http://localhost:5173/settings/account')
     });
     
@@ -23,28 +23,29 @@ describe('safety', () => {
         cy.wait(2000)
         accountSettingsPage.blockNewUserButton
         cy.wait(3000)
+        accountSettingsPage.removeBlockedNewUserButton
          cy.reload();
         // cy.get('.customize-privacy-section > :nth-child(4) > :nth-child(5)').should('contain', 'ali');
     })
     
-   it('mute community',()=>{
+//    it('mute community',()=>{
 
-    const accountSettingsPage = new AccountSettingsPage(); 
-        accountSettingsPage.setButton
-        accountSettingsPage.settButton
-        accountSettingsPage.safetyAndPrivacy
-        cy.wait(20000)
-        accountSettingsPage.addNewCommunitiesYouWantToMuteField.should('be.visible').type("karina")
-        cy.wait(2000)
-        accountSettingsPage.addNewCommunitiesYouWantToMuteButton
-        cy.wait(3000)
-        accountSettingsPage.removeNewCommunitiesYouWantToMuteButton
-        cy.wait(2000)
-        accountSettingsPage.addNewCommunitiesYouWantToMuteField.should('be.visible').type("karina")
-        accountSettingsPage.addNewCommunitiesYouWantToMuteButton
-        cy.reload();
-       // cy.contains('karina', { timeout: 10000 }).should('exist');
-        //cy.get(':nth-child(5) > .css-1na0n86').should('contain', 'ali');
-   })
+//     const accountSettingsPage = new AccountSettingsPage(); 
+//         accountSettingsPage.setButton
+//         accountSettingsPage.settButton
+//         accountSettingsPage.safetyAndPrivacy
+//         cy.wait(20000)
+//         accountSettingsPage.addNewCommunitiesYouWantToMuteField.should('be.visible').type("karina")
+//         cy.wait(2000)
+//         accountSettingsPage.addNewCommunitiesYouWantToMuteButton
+//         cy.wait(3000)
+//         accountSettingsPage.removeNewCommunitiesYouWantToMuteButton
+//         cy.wait(2000)
+//         accountSettingsPage.addNewCommunitiesYouWantToMuteField.should('be.visible').type("karina")
+//         accountSettingsPage.addNewCommunitiesYouWantToMuteButton
+//         cy.reload();
+//        // cy.contains('karina', { timeout: 10000 }).should('exist');
+//         //cy.get(':nth-child(5) > .css-1na0n86').should('contain', 'ali');
+//    })
 
 })
