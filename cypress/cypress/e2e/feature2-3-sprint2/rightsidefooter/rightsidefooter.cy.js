@@ -20,13 +20,14 @@ describe('rightsidefooter', () => {
       cy.wait(2000)
       writesidefooter.user
       cy.wait(2000)
-      writesidefooter.profileview
       writesidefooter.settingButton
       cy.wait(2000)
       cy.url().should('eq', 'http://localhost:5173/settings/account');
       cy.wait(2000)
+      writesidefooter.user
+      cy.wait(2000)
       writesidefooter.logoutButton
-      //cy.url().should('eq', 'http://localhost:5173');
+      cy.url().should('eq', 'http://localhost:5173/');
     })
 
    

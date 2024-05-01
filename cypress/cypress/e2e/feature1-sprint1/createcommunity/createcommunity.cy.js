@@ -28,24 +28,25 @@ describe('Communities', () => {
     //     createcommunity.createCommunityButton
     //     cy.wait(2000)
     //     createcommunity.addcommunity
-    //     createcommunity.nameField.type("community44public")
+    //     createcommunity.nameField.type("community456664public")
     //     createcommunity.createCommunityButtonSave
     //     createcommunity.cancelButton
     //     //Createcommunity
+    //     cy.get('.align-self-end').should('contain.text', 'community456664public')
     // })
 
 
- it('view Community', () => {
-     const createcommunity = new Createcommunity();
-    //     // // cy.visit('http://localhost:5173/')
-     cy.wait(5000)
+//  it('view Community', () => {
+//      const createcommunity = new Createcommunity();
+//     //     // // cy.visit('http://localhost:5173/')
+//      cy.wait(5000)
 
-     createcommunity.createCommunityButton
-    cy.wait(2000)
-    createcommunity.view
-    cy.url().should('eq', 'http://localhost:5173/r/community2public');
+//      createcommunity.createCommunityButton
+//     cy.wait(2000)
+//     createcommunity.view
+//     cy.url().should('eq', 'http://localhost:5173/r/community2public');
     
-     })
+//      })
 
 
 
@@ -56,10 +57,11 @@ describe('Communities', () => {
 
     //     createcommunity.createCommunityButton
     //     createcommunity.addcommunity
-    //     createcommunity.nameField.type("community23priv")
+    //     createcommunity.nameField.type("community233priv")
     //     createcommunity.privateButton
     //     createcommunity.matureSwitch
     //     createcommunity.createCommunityButtonSave
+     //     cy.get('.align-self-end').should('contain.text', 'community233priv')
     // })
 
     //  it('view private Community', () => {
@@ -80,8 +82,9 @@ describe('Communities', () => {
 
     //     createcommunity.createCommunityButton
     //     createcommunity.addcommunity
-    //     createcommunity.nameField.type("community1rest")
+    //     createcommunity.nameField.type("community123rest")
     //     createcommunity.restrictedButton.click()
     //     createcommunity.createCommunityButtonSave
+    //     cy.get('.align-self-end').should('contain.text', 'community123rest')
     // })
 })

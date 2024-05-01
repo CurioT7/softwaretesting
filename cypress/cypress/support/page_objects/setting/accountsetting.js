@@ -18,11 +18,11 @@ export class AccountSettingsPage{
     get saveEmailButton(){ return cy.get('.chakra-modal__footer > .chakra-button').click({force: true})}
     get gotitButton(){return cy.get('.chakra-modal__close-btn').click()}
     get discription(){return cy.get('.css-pfs9vx > .col-10 > .headings-description').should('have.text', 'Maram.mohamed01@eng-st.cu.edu.eg');}
-    get changePasswordButton(){return cy.get('.css-6m33xd > :nth-child(3) > .chakra-button').click()}
+    get changePasswordButton(){return cy.get('.css-pfs9vx > .account-button > .css-0 > .chakra-button').click()}
     get oldPasswordField(){return cy.get('[placeholder="OLD PASSWORD"]')}
     get newPasswordField(){return cy.get('[placeholder="NEW PASSWORD"]')}
     get confirmPasswordField(){return cy.get('[placeholder="CONFRIM NEW PASSWORD"]')}
-    get savePasswordButton(){return cy.get('.css-j7qwjs > .chakra-button').click()}
+    get savePasswordButton(){return cy.get('.col-8 > .chakra-button').click({force: true})}
     get xPasswordButton(){return cy.get('.chakra-modal__close-btn').click()}
     get genderSelection(){return cy.get('.css-1s33dmy > :nth-child(2) > .chakra-select__wrapper > .chakra-select').select('WOMAN')}
     get locationCustomization(){return cy.get('.css-cyzh8z > .chakra-select__wrapper > .chakra-select').select('Egypt')}
@@ -80,8 +80,8 @@ export class AccountSettingsPage{
     get showMatureContentSwitch(){return cy.get(':nth-child(3) > .css-12ccz81 > .chakra-switch > .chakra-switch__track').click()}
     get autoplayMediaSwitch(){return cy.get(':nth-child(4) > .col > .chakra-switch > .chakra-switch__track').click()}
     get communityThemesSwitch(){return cy.get(':nth-child(5) > .css-12ccz81 > .chakra-switch > .chakra-switch__track').click()}
-    get communityContentSortCheck(){return cy.get(':nth-child(6) > .css-12ccz81 > .chakra-select__wrapper > .chakra-select').select('New')}
-    get globalContentViewCheck(){return cy.get(':nth-child(7) > .css-12ccz81 > .chakra-select__wrapper > .chakra-select').select('Classic')}
+    get communityContentSortCheck(){return cy.get(':nth-child(6) > :nth-child(1) > .css-c6lgk8 > .chakra-select__wrapper > [data-testid="sort-dropdown"]').select('New')}
+    get globalContentViewCheck(){return cy.get(':nth-child(7) > :nth-child(1) > .css-c6lgk8 > .chakra-select__wrapper > [data-testid="sort-dropdown"]').select('Classic')}
     get openPostsInNewTabSwitch(){return cy.get(':nth-child(8) > .css-12ccz81 > .chakra-switch > .chakra-switch__track').click()}
     
     //////////////////////notification settings/////////////////
@@ -96,9 +96,9 @@ export class AccountSettingsPage{
 
     ///////////////////////email settings///////////////////////
     get emails(){return cy.get('#emails-link').click()}
-    get newFollowersEmailSwitch(){return cy.get(':nth-child(5) > .chakra-switch > .chakra-switch__track').click()}
-    get chatRequestSwitch(){return cy.get('.user-settings-header > :nth-child(3) > .chakra-switch > .chakra-switch__track').click()}
-    get unsubscripeFromAllEmailsSwitch(){ return cy.get(':nth-child(7) > .chakra-switch > .chakra-switch__track').click()}
+    get newFollowersEmailSwitch(){return cy.get(':nth-child(4) > .chakra-switch').click()}
+    get chatRequestSwitch(){return cy.get(':nth-child(2) > .chakra-switch > .chakra-switch__track').click()}
+    get unsubscripeFromAllEmailsSwitch(){ return cy.get(':nth-child(4) > .chakra-switch > .chakra-switch__track > .chakra-switch__thumb').click()}
    
 }
 

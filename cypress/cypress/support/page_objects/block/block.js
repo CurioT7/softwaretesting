@@ -1,30 +1,24 @@
-class BlockPage{
-    get settingsPage(){
-        return cy.get('[data-testid="Settings"]')
+export class BlockPage{
+    get viewuser(){
+        return cy.get(':nth-child(2) > .chakra-card > .chakra-card__header > .css-k008qs > .css-1fp7af3 > .community-post-name').click()
     }
-    get safetyAndPrivacy(){
-        return cy.get('[data-testid="safetyAndPrivacy"]').first()
+    get downmenu(){
+        return cy.get('.ellipsis-btn').click()
     }
     get blocknewUser(){
-        return cy.get('[data-testid="blockUser"]')
+        return cy.get(':nth-child(3) > :nth-child(2) > .text-text').click()
     }
-    get addBlockButton(){
-        return cy.contains('button', 'Add')
+    get profilemenu(){
+        return cy.get('li.sub-right-navbar > .right-item-option').click()
     } 
     //shows blocked people
-    get blockedAccounts(){
-        return cy.get('[data-testid="/Blocked"]')
+    get setting(){
+        return cy.get('.drop-down-description').click()
     }
-    get removeBlockButton(){
-        return cy.contains('button', 'Remove')
+    get safety(){
+        return cy.get('#safety-privacy-link').click({force:true})
     }
-    get assertblock(){
-        return cy.get('[data-testid="Block"]')
-    }
-    get assertunblock(){
-        return cy.get('[data-testid="unBlock"]')
-    }
-    //get blockMessage hna wala fl notifications ??
+    
     
 }   
 

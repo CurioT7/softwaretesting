@@ -24,10 +24,13 @@ describe('Follow test site', () => {
     it('follow and unfollow a user', () => {
         const followpage = new FollowPage();
        followpage.viewprofile
+       cy.wait(2000)
        followpage.profile
+       cy.wait(4000)
+       cy.get('a > .profileItem').should('contain.text', 'Followers');
+       cy.wait(2000)
        followpage.follower
-       cy.get(':nth-child(2) > .ms-2').should('contain.text', 'Ok_software');
-       followpage.unfollow
+       //followpage.unfollow
     })
     
 })

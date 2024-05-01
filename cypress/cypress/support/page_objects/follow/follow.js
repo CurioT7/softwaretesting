@@ -15,8 +15,8 @@ export class FollowPage{
         return cy.get('.right-item-option > .profileImg').click({ force: true });
       }
 get profile(){return cy.get('.drop-down-profile-description').click()}      
-get follower(){return cy.get('a > .profileItem').click()}
-get unfollow(){return cy.get(':nth-child(3) > .FollowBtn').click()}
+get follower(){return  cy.get('a > .profileItem').click()}
+get unfollow(){return cy.get(':nth-child(2) > .FollowBtn').click()}
     
  
 }

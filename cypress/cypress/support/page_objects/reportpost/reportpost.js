@@ -5,7 +5,7 @@ export class Report{
     get resoanButton(){return cy.get('.flex-column > :nth-child(2) > :nth-child(3)').click()}
     
     get submitButton(){return cy.get('.report-reason-next-button-enabled').click()}
-    get doneButton() { return cy.get('.report-reason-next-button-enabled').click(); }
+    get doneButton() { return cy.get('.report-reason-next-button-enabled').click({force:true}); }
     
     
     

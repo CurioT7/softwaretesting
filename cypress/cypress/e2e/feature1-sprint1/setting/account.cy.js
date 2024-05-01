@@ -21,7 +21,7 @@ describe('account setting', () => {
     //   accountSettingsPage.accountSet
     //   accountSettingsPage.changeEmailAddressButton
     //   accountSettingsPage.currentPasswordField.type("1234")
-    //   accountSettingsPage.newEmailField.type( "maramtaek377gmail.com")
+    //   accountSettingsPage.newEmailField.type( "maramtaek3777gmail.com")
     //   accountSettingsPage.saveEmailButton
     //   cy.wait(2000)
     //   accountSettingsPage.currentPasswordField.clear().should('be.visible').type("sama1212")
@@ -67,15 +67,15 @@ describe('account setting', () => {
       
 //      })
 
-//     it('select your location', () => {
-//         const accountSettingsPage = new AccountSettingsPage(); 
-//          accountSettingsPage.setButton
-//         accountSettingsPage.settButton
-//         accountSettingsPage.accountSet
-//         accountSettingsPage. locationCustomization  
-//         cy.wait(2000)
-//         cy.get('.css-cyzh8z > .chakra-select__wrapper > .chakra-select').should('contain.text', 'Egypt');
-//     })
+    // it('select your location', () => {
+    //     const accountSettingsPage = new AccountSettingsPage(); 
+    //      accountSettingsPage.setButton
+    //     accountSettingsPage.settButton
+    //     accountSettingsPage.accountSet
+    //     accountSettingsPage. locationCustomization  
+    //     cy.wait(2000)
+    //     cy.get('.css-cyzh8z > .chakra-select__wrapper > .chakra-select').should('contain.text', 'Egypt');
+    // })
 
 //     it('shows google login button', () => {
 //         const accountSettingsPage = new AccountSettingsPage(); 

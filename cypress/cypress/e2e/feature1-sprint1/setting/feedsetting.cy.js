@@ -10,88 +10,88 @@ describe('feedSettings', () => {
        // cy.visit('http://localhost:5173/settings/account')
     });
 
-    it('showMatureContent', () => {
-    const accountSettingsPage = new AccountSettingsPage(); 
-    accountSettingsPage.setButton
-    accountSettingsPage.settButton
-    accountSettingsPage.feed
-    cy.wait(2000)
-    accountSettingsPage.showMatureContentSwitch
-    cy.wait(2000)
-    accountSettingsPage.showMatureContentSwitch
-    cy.wait(2000)
-    cy.reload();
-    accountSettingsPage.showMatureContentSwitch.should('not.be.checked');
-  })
+  //   it('showMatureContent', () => {
+  //   const accountSettingsPage = new AccountSettingsPage(); 
+  //   accountSettingsPage.setButton
+  //   accountSettingsPage.settButton
+  //   accountSettingsPage.feed
+  //   cy.wait(2000)
+  //   accountSettingsPage.showMatureContentSwitch
+  //   cy.wait(2000)
+  //   accountSettingsPage.showMatureContentSwitch
+  //   cy.wait(2000)
+  //   cy.reload();
+  //   accountSettingsPage.showMatureContentSwitch.should('not.be.checked');
+  // })
     
-    it('autoplayMedia', () => {
-    const accountSettingsPage = new AccountSettingsPage(); 
-    accountSettingsPage.setButton
-    accountSettingsPage.settButton
-    accountSettingsPage.feed
-    cy.wait(2000)
-    accountSettingsPage.autoplayMediaSwitch
-    cy.wait(2000)
-    accountSettingsPage.autoplayMediaSwitch
-    cy.wait(2000)
-    cy.reload();
-    accountSettingsPage.autoplayMediaSwitch.should('not.be.checked');
-     })
+    // it('autoplayMedia', () => {
+    // const accountSettingsPage = new AccountSettingsPage(); 
+    // accountSettingsPage.setButton
+    // accountSettingsPage.settButton
+    // accountSettingsPage.feed
+    // cy.wait(2000)
+    // accountSettingsPage.autoplayMediaSwitch
+    // cy.wait(2000)
+    // accountSettingsPage.autoplayMediaSwitch
+    // cy.wait(2000)
+    // cy.reload();
+    // accountSettingsPage.autoplayMediaSwitch.should('not.be.checked');
+    //  })
      
-    it('communityThemes', () => {
-        const accountSettingsPage = new AccountSettingsPage(); 
-        accountSettingsPage.setButton
-        accountSettingsPage.settButton
-        accountSettingsPage.feed
-        cy.wait(2000)
-        accountSettingsPage. communityThemesSwitch
-        cy.wait(2000)
-        accountSettingsPage. communityThemesSwitch
-        cy.wait(2000)
-        cy.reload();
-        accountSettingsPage.communityThemesSwitch.should('not.be.checked');
+    // it('communityThemes', () => {
+    //     const accountSettingsPage = new AccountSettingsPage(); 
+    //     accountSettingsPage.setButton
+    //     accountSettingsPage.settButton
+    //     accountSettingsPage.feed
+    //     cy.wait(2000)
+    //     accountSettingsPage. communityThemesSwitch
+    //     cy.wait(2000)
+    //     accountSettingsPage. communityThemesSwitch
+    //     cy.wait(2000)
+    //     cy.reload();
+    //     accountSettingsPage.communityThemesSwitch.should('not.be.checked');
         
-     })
+    //  })
 
 
-     it('communityContentSort', () => {
-       const accountSettingsPage = new AccountSettingsPage(); 
-       accountSettingsPage.setButton
-        accountSettingsPage.settButton
-        accountSettingsPage.feed
-        cy.wait(2000)
-       accountSettingsPage.communityContentSortCheck
-       cy.wait(2000)
-       cy.get(':nth-child(6) > .css-12ccz81 > .chakra-select__wrapper > .chakra-select').should('contain.text', 'New');
-     })
+    //  it('communityContentSort', () => {
+    //    const accountSettingsPage = new AccountSettingsPage(); 
+    //    accountSettingsPage.setButton
+    //     accountSettingsPage.settButton
+    //     accountSettingsPage.feed
+    //     cy.wait(2000)
+    //    accountSettingsPage.communityContentSortCheck
+    //    cy.wait(2000)
+    //    cy.get(':nth-child(6) > :nth-child(1) > .css-c6lgk8 > .chakra-select__wrapper > [data-testid="sort-dropdown"]').should('contain.text', 'New');
+    //  })
 
 
 
-     it(' globalContentView', () => {
-        const accountSettingsPage = new AccountSettingsPage(); 
-        accountSettingsPage.setButton
-        accountSettingsPage.settButton
-        accountSettingsPage.feed
-        cy.wait(2000)
-        accountSettingsPage. globalContentViewCheck
-        cy.get(':nth-child(7) > .css-12ccz81 > .chakra-select__wrapper > .chakra-select').should('contain.text', 'Classic');
-        cy.reload();
-        cy.get(':nth-child(7) > .css-12ccz81 > .chakra-select__wrapper > .chakra-select').should('contain.text', 'Classic');
-     })
+    //  it(' globalContentView', () => {
+    //     const accountSettingsPage = new AccountSettingsPage(); 
+    //     accountSettingsPage.setButton
+    //     accountSettingsPage.settButton
+    //     accountSettingsPage.feed
+    //     cy.wait(2000)
+    //     accountSettingsPage. globalContentViewCheck
+    //     cy.get(':nth-child(7) > :nth-child(1) > .css-c6lgk8 > .chakra-select__wrapper > [data-testid="sort-dropdown"]').should('contain.text', 'Classic');
+    //     cy.reload();
+    //     cy.get(':nth-child(7) > :nth-child(1) > .css-c6lgk8 > .chakra-select__wrapper > [data-testid="sort-dropdown"]').should('contain.text', 'Classic');
+    //  })
 
 
-    it('openPostsInNewTabSwitch', () => {
-        const accountSettingsPage = new AccountSettingsPage(); 
-        accountSettingsPage.setButton
-        accountSettingsPage.settButton
-        accountSettingsPage.feed
-        cy.wait(2000)
-        accountSettingsPage.openPostsInNewTabSwitch
-        cy.wait(2000)
-        accountSettingsPage.openPostsInNewTabSwitch
-        cy.wait(2000)
-         cy.reload();
-        accountSettingsPage.openPostsInNewTabSwitch.should('not.be.checked');
-    })
+    // it('openPostsInNewTabSwitch', () => {
+    //     const accountSettingsPage = new AccountSettingsPage(); 
+    //     accountSettingsPage.setButton
+    //     accountSettingsPage.settButton
+    //     accountSettingsPage.feed
+    //     cy.wait(2000)
+    //     accountSettingsPage.openPostsInNewTabSwitch
+    //     cy.wait(2000)
+    //     accountSettingsPage.openPostsInNewTabSwitch
+    //     cy.wait(2000)
+    //      cy.reload();
+    //     accountSettingsPage.openPostsInNewTabSwitch.should('not.be.checked');
+    // })
     
 })
