@@ -1,10 +1,10 @@
 
 import { login1 } from '../../../utils/login'
-import {Vote} from '../../../support/page_objects/vote/vote'
+import {Unfollow} from '../../../support/page_objects/unfollowfrompost/unfollow'
 
 
 
-describe('vote', () => {
+describe('unfollow user from post', () => {
     
     beforeEach('login and open home page', () => {
         cy.viewport(1600, 1660)
@@ -12,13 +12,13 @@ describe('vote', () => {
         login1('samamostafa', 'sama1212');
     })
 
-    it('vote', () => {
-        const vote = new Vote();
+    it('unfollow user from post', () => {
+        const unfollow = new Unfollow();
         cy.wait(7000)
-        vote.voteButton
+        unfollow.UsertabButton
         cy.wait(2000)
-        vote.downvoteButton
-        //vote.voteButton
+        unfollow.followButton
+      
        
         
      })

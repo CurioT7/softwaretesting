@@ -3,7 +3,7 @@ import {Edit} from '../../../support/page_objects/editcomment/editcomment'
 
 
 
-describe('share', () => {
+describe('edit comment', () => {
     
     beforeEach('login and open home page', () => {
         cy.viewport(1600, 1660)
@@ -11,7 +11,7 @@ describe('share', () => {
         login1('samamostafa', 'sama1212');
     })
 
-    it('share link', () => {
+    it('edit comment', () => {
         const edit= new Edit();
         cy.wait(7000)
         edit.viewButton
