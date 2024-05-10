@@ -14,9 +14,9 @@ export class Post{
     get spaceButton(){return cy.get('.ql-script').click()}
     get smalllargecharButton(){return cy.get(':nth-child(6) > .chakra-button').click()}
     get ocButton(){return cy.get('.button-group-edit > :nth-child(1)').click()}
-    get spoilerButton(){return cy.get('.css-ez23ye').should('be.visible').click({force:true})}
+    get spoilerButton(){return cy.get('.css-ez23ye').click({force:true})}
     get mhsfButton(){return cy.get('.button-group-edit > :nth-child(3)').click()}
-    get saveButton(){return cy.get('.save-buttons > .chakra-button').click()}
+    get saveButton(){return cy.get('.rounded-start').click()}
     get avatar(){return cy.get('.post-methods > :nth-child(2)').click({force:true})}
     get upload(){return cy.get('.upload-text > .chakra-button').click({force:true})}
     get link(){return cy.get('.post-methods > :nth-child(3)').click()}

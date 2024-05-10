@@ -28,11 +28,11 @@ describe('Communities', () => {
     //     createcommunity.createCommunityButton
     //     cy.wait(2000)
     //     createcommunity.addcommunity
-    //     createcommunity.nameField.type("community456664public")
+    //     createcommunity.nameField.type("december2")
     //     createcommunity.createCommunityButtonSave
     //     createcommunity.cancelButton
     //     //Createcommunity
-    //     cy.get('.align-self-end').should('contain.text', 'community456664public')
+    //     cy.get('.align-self-end').should('contain.text', 'r/december2')
     // })
 
 
@@ -57,11 +57,11 @@ describe('Communities', () => {
 
     //     createcommunity.createCommunityButton
     //     createcommunity.addcommunity
-    //     createcommunity.nameField.type("community233priv")
+    //     createcommunity.nameField.type("flowery")
     //     createcommunity.privateButton
     //     createcommunity.matureSwitch
     //     createcommunity.createCommunityButtonSave
-     //     cy.get('.align-self-end').should('contain.text', 'community233priv')
+    //      cy.get('.align-self-end').should('contain.text', 'r/flowey')
     // })
 
     //  it('view private Community', () => {
@@ -82,9 +82,9 @@ describe('Communities', () => {
 
     //     createcommunity.createCommunityButton
     //     createcommunity.addcommunity
-    //     createcommunity.nameField.type("community123rest")
+    //     createcommunity.nameField.type("sundayd")
     //     createcommunity.restrictedButton.click()
     //     createcommunity.createCommunityButtonSave
-    //     cy.get('.align-self-end').should('contain.text', 'community123rest')
+    //     cy.get('.align-self-end').should('contain.text', 'r/sundayd')
     // })
 })

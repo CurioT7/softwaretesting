@@ -18,7 +18,9 @@ export class BlockPage{
     get safety(){
         return cy.get('#safety-privacy-link').click({force:true})
     }
-    
+    get searchforuser() {
+        return cy.get('#popover-trigger-\\:r3\\:').click();
+      }
     
 }   
 

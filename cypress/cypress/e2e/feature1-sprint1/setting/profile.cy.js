@@ -24,7 +24,7 @@ describe('profile', () => {
     //   accountSettingsPage.profile
     //   cy.wait(1000)
     //   accountSettingsPage.displayNamefield.clear().type('qwertyuioasdfghasdfghjnbvadsfgdrhhhhhhhhhh{enter}')
-    //   cy.wait(2000);
+    //   cy.wait(3000);
     //   accountSettingsPage.displayNamefield.clear().type('Mero{enter}')
     //   cy.wait(2000); // Wait for 2 seconds (adjust as needed) for the profile to update
     //   cy.reload();
@@ -33,8 +33,8 @@ describe('profile', () => {
     //   cy.wait(2000);
     //   accountSettingsPage.view
     //   accountSettingsPage.user
-    //   cy.wait(2000);
-    // cy.get('h3.userName').should('contain.text', 'Mero');
+    //   cy.wait(8000);
+    //   cy.get('.profilename').should('contain.text', 'Mero');
     // })
 
     // it('profile about', () => {
@@ -51,12 +51,13 @@ describe('profile', () => {
     //   cy.wait(2000)
     //   accountSettingsPage.view
     //   accountSettingsPage.user
-    // // // Check if the input value (display name) is "cairo university faculty of engineer "
-    // //   cy.get('#about-textarea').invoke('val').should('eq', 'cairo university faculty of engineer ');
-    
+    //   cy.wait(8000)
+    //   cy.get('.UserBio').should('contain', 'cairo university faculty of engineer.');
+   
     // })
 
   //   //throwing exception to fail (max5 aqcuired 6)
+
   //  it(' addSocialLinks', () => {
   //     const accountSettingsPage = new AccountSettingsPage(); 
   //     accountSettingsPage.setButton
@@ -123,6 +124,7 @@ describe('profile', () => {
   //     cy.get('[style="display: flex; flex-wrap: wrap; gap: 0.5em;"] > :nth-child(1)').should('contain.text', '@maram');
   //  })
 
+
   //   it('uploadAvatarImage',()=>{
   //     const accountSettingsPage = new AccountSettingsPage(); 
   //      accountSettingsPage.setButton
@@ -131,16 +133,24 @@ describe('profile', () => {
   //     cy.wait(2000)
   //      accountSettingsPage.uploadAvatarImageButton
   //      cy.wait(2000)
+  //      accountSettingsPage.view
+  //      accountSettingsPage.user
+  //      cy.wait(9000)
+  //      cy.get('.profilepicture > .profileAvatar').should('be.exist')
   // })
 
     // it('uploadBannerImage',()=>{
-    //   const accountSettingsPage = new AccountSettingsPage(); 
-    //   accountSettingsPage.setButton
-    //   accountSettingsPage.settButton
-    //  accountSettingsPage.profile
-    //   cy.wait(2000)
+    //    const accountSettingsPage = new AccountSettingsPage(); 
+    //    accountSettingsPage.setButton
+    //    accountSettingsPage.settButton
+    //    accountSettingsPage.profile
+    //    cy.wait(2000)
     //    accountSettingsPage.uploadBannerImageButton
     //    cy.wait(2000)
+    //    accountSettingsPage.view
+    //    accountSettingsPage.user
+    //    cy.wait(9000)
+    //    cy.get('.gradient').should('be.notexist')
     // })  
 
   // it('nsfwSwitch',()=>{
@@ -156,6 +166,7 @@ describe('profile', () => {
   //     cy.reload();
   //     accountSettingsPage.nsfwSwitch.should('not.be.checked');
   // }) 
+
   // it('allo wPeopleToFollowYou',()=>{
   //   const accountSettingsPage = new AccountSettingsPage(); 
   //      accountSettingsPage.setButton
@@ -199,13 +210,13 @@ describe('profile', () => {
   //     accountSettingsPage.activeInCommunitiesVisibilitySwitch.should('not.be.checked');
   // })
 
-  // it('clearHistory',()=>{
-  //  const accountSettingsPage = new AccountSettingsPage(); 
-  //   accountSettingsPage.setButton
-  //   accountSettingsPage.settButton
-  //   accountSettingsPage.profile
-  //   cy.wait(2000)
-  // accountSettingsPage.clearHistoryButton
-  // cy.url().should('eq', 'http://localhost:5173/');
-  // })
+//   it('clearHistory',()=>{
+//    const accountSettingsPage = new AccountSettingsPage(); 
+//     accountSettingsPage.setButton
+//     accountSettingsPage.settButton
+//     accountSettingsPage.profile
+//     cy.wait(2000)
+//   accountSettingsPage.clearHistoryButton
+//  // cy.url().should('eq', 'http://localhost:5173/');
+//   })
 })

@@ -18,7 +18,7 @@ export class AccountSettingsPage{
     get saveEmailButton(){ return cy.get('.chakra-modal__footer > .chakra-button').click({force: true})}
     get gotitButton(){return cy.get('.chakra-modal__close-btn').click()}
     get discription(){return cy.get('.css-pfs9vx > .col-10 > .headings-description').should('have.text', 'Maram.mohamed01@eng-st.cu.edu.eg');}
-    get changePasswordButton(){return cy.get('.css-pfs9vx > .account-button > .css-0 > .chakra-button').click()}
+    get changePasswordButton(){return cy.get('.css-pfs9vx > .account-button > .css-0 > .chakra-button').click({force: true})}
     get oldPasswordField(){return cy.get('[placeholder="OLD PASSWORD"]')}
     get newPasswordField(){return cy.get('[placeholder="NEW PASSWORD"]')}
     get confirmPasswordField(){return cy.get('[placeholder="CONFRIM NEW PASSWORD"]')}
@@ -26,7 +26,7 @@ export class AccountSettingsPage{
     get xPasswordButton(){return cy.get('.chakra-modal__close-btn').click()}
     get genderSelection(){return cy.get('.css-1s33dmy > :nth-child(2) > .chakra-select__wrapper > .chakra-select').select('WOMAN')}
     get locationCustomization(){return cy.get('.css-cyzh8z > .chakra-select__wrapper > .chakra-select').select('Egypt')}
-    get deleteAccountButton(){return cy.get('.mb-5 > .css-0 > .chakra-button').click()}
+    get deleteAccountButton(){return cy.get('.mb-5 > .css-0 > .chakra-button').click({force:true})}
     get deleteReason(){return cy.get('.chakra-textarea')}
     get deleteUsername(){return cy.get('.css-1w5rbni')}
     get deletePass(){return cy.get('.css-1uliq0')}
@@ -58,7 +58,7 @@ export class AccountSettingsPage{
     get backButton(){ return cy.get('.arrow-button').click()}
     get socialCloseButton(){ return cy.get('.chakra-modal__close-btn').click()}
     
-    get uploadAvatarImageButton(){return cy.get('[data-testid="profile-image"] > label > .image-text > :nth-child(1)').click()}
+    get uploadAvatarImageButton(){return cy.get('.upload-profile > .fa').click()}
     get uploadBannerImageButton(){ return cy.get('.banner-upload').click()}
     get nsfwSwitch(){return cy.get(':nth-child(8) > .chakra-switch > .chakra-switch__track').click({force:true})}
     get allowPeopleToFollowYouSwitch(){return cy.get(':nth-child(10) > .chakra-switch > .chakra-switch__track').click({force:true})}
@@ -86,13 +86,13 @@ export class AccountSettingsPage{
     
     //////////////////////notification settings/////////////////
     get notification(){return cy.get('#notifications-link').click()}
-    get mentionsofUsernameSwitch(){return cy.get(':nth-child(2) > .chakra-switch > .chakra-switch__track').click()}
-    get commentsOnYourPostsSwitch(){return cy.get('.activity-section > :nth-child(3) > .chakra-switch > .chakra-switch__track').click()}
-    get upvotesOnYourPostsSwitch(){return cy.get(':nth-child(4) > .chakra-switch > .chakra-switch__track').click()}
-    get upvotesOnYourCommentsSwitch(){return cy.get(':nth-child(5) > .chakra-switch > .chakra-switch__track').click()}
-    get repliesToYourCommentsSwitch(){return cy.get(':nth-child(6) > .chakra-switch > .chakra-switch__track').click()}
-    get newFollowersSwitch(){return cy.get(':nth-child(7) > .chakra-switch > .chakra-switch__track').click() }
-    get postsYouFollowSwitch(){return cy.get(':nth-child(8) > .chakra-switch > .chakra-switch__track').click()}
+    get mentionsofUsernameSwitch(){return cy.get(':nth-child(3) > :nth-child(2) > .chakra-switch > .chakra-switch__track').click({force:true})}
+    get commentsOnYourPostsSwitch(){return cy.get(':nth-child(3) > :nth-child(3) > .chakra-switch > .chakra-switch__track').click({force:true})}
+    get upvotesOnYourPostsSwitch(){return cy.get(':nth-child(3) > :nth-child(4) > .chakra-switch > .chakra-switch__track').click({force:true})}
+    get upvotesOnYourCommentsSwitch(){return cy.get(':nth-child(5) > .chakra-switch > .chakra-switch__track').click({force:true})}
+    get repliesToYourCommentsSwitch(){return cy.get(':nth-child(6) > .chakra-switch > .chakra-switch__track').click({force:true})}
+    get newFollowersSwitch(){return cy.get(':nth-child(7) > .chakra-switch > .chakra-switch__track').click({force:true}) }
+    get postsYouFollowSwitch(){return cy.get(':nth-child(8) > .chakra-switch > .chakra-switch__track').click({force:true})}
 
     ///////////////////////email settings///////////////////////
     get emails(){return cy.get('#emails-link').click()}

@@ -17,7 +17,13 @@ export class FollowPage{
 get profile(){return cy.get('.drop-down-profile-description').click()}      
 get follower(){return  cy.get('a > .profileItem').click()}
 get unfollow(){return cy.get(':nth-child(2) > .FollowBtn').click()}
-    
+get searchforuser() {
+  return cy.get('#popover-trigger-\\:r3\\:').click();
+}
+get followButton() {
+  return cy.get('.follow-button').click();
+}
+
  
 }
 

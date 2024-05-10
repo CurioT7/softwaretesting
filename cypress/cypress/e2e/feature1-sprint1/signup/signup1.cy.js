@@ -24,7 +24,7 @@ describe('signup', () => {
         cy.wait(2000)
         signUpPage.passwordField.type("12")
         signUpPage.continue2Button
-        signUpPage.usernameField.clear().type("mohamed1232")
+        signUpPage.usernameField.clear().type("mohamed124432")
         cy.wait(4000)
         signUpPage.passwordField.clear().type("maram1212")
         cy.wait(2000)

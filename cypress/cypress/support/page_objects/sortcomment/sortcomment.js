@@ -8,8 +8,11 @@ export class Sort{
     get sortmenuButton() {
         return cy.get('.sortbtn').click({force:true});
     }
-    get sortbytop(){return cy.get('#sortComments > :nth-child(3)').click({force:true})}
-    get sortbybest(){return cy.get('#sortComments > :nth-child(2)').click({force:true})}
-    get sortbynew(){return cy.get('#sortComments > :nth-child(4)').click({force:true})}
+    get sortbytop(){return cy.get('#sortComments > :nth-child(3) > div > span').click({force:true})}
+    
+    get sortbynew(){return cy.get('#sortComments > :nth-child(4) > div > span').click({force:true})}
+    get searchforuser() {
+        return cy.get('#popover-trigger-\\:r3\\:').click();
+      }
 }
 export default new Sort();

@@ -8,7 +8,11 @@ export class Comment{
     get viewButton() {
         return cy.get(':nth-child(2) > .chakra-card > .chakra-card__body > .chakra-heading').click({force:true});
     }
-    get openmenu(){return cy.get(':nth-child(28) > .col-md-3 > .post-dropdown-control').click({force:true})}
-    get deleteButton(){return cy.get('.drop-down-list > :nth-child(3)').click()}
+    get openmenu(){return cy.get(':nth-child(7) > .col-md-3 > .post-dropdown-control').click({force:true})}
+    get open2menu(){return cy.get(':nth-child(10) > .col-md-3 > .post-dropdown-control').click({force:true})}
+    get deleteButton(){return cy.get(':nth-child(3) > div > .mt-3').click()}
+    get searchforuser() {
+        return cy.get('#popover-trigger-\\:r3\\:').click();
+      }
 }
 export default new Comment();

@@ -63,7 +63,9 @@ describe('feedSettings', () => {
     //    accountSettingsPage.communityContentSortCheck
     //    cy.wait(2000)
     //    cy.get(':nth-child(6) > :nth-child(1) > .css-c6lgk8 > .chakra-select__wrapper > [data-testid="sort-dropdown"]').should('contain.text', 'New');
-    //  })
+    //    cy.visit('http://localhost:5173/r/community23priv')
+    //    cy.get('.dropbtn').should('contain','New')
+    //   })
 
 
 
@@ -77,6 +79,7 @@ describe('feedSettings', () => {
     //     cy.get(':nth-child(7) > :nth-child(1) > .css-c6lgk8 > .chakra-select__wrapper > [data-testid="sort-dropdown"]').should('contain.text', 'Classic');
     //     cy.reload();
     //     cy.get(':nth-child(7) > :nth-child(1) > .css-c6lgk8 > .chakra-select__wrapper > [data-testid="sort-dropdown"]').should('contain.text', 'Classic');
+    //     cy.visit('http://localhost:5173/')
     //  })
 
 
@@ -92,6 +95,13 @@ describe('feedSettings', () => {
     //     cy.wait(2000)
     //      cy.reload();
     //     accountSettingsPage.openPostsInNewTabSwitch.should('not.be.checked');
+    //     cy.wait(2000)
+    //     accountSettingsPage.openPostsInNewTabSwitch
+    //     cy.wait(2000)
+    //     cy.visit('http://localhost:5173/')
+    //     cy.wait(2000)
+    //     cy.get(':nth-child(2) > .chakra-card > .chakra-card__body > .chakra-heading').click()
+    //     cy.get('#root > :nth-child(1)').should('be.notexist')
     // })
     
 })

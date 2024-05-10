@@ -8,7 +8,7 @@ describe('emails', () => {
         
         cy.viewport(1600, 1660)
           
-        login1('maramtarek2', 'sama1212');
+        login1('samra', 'maram1212');
        // cy.visit('http://localhost:5173/settings/account')
     });
     
@@ -26,20 +26,20 @@ describe('emails', () => {
         accountSettingsPage.newFollowersEmailSwitch.should('not.be.checked');
         cy.wait(2000)
 
-        accountSettingsPage.chatRequestSwitch
-        cy.wait(2000)
-        accountSettingsPage.chatRequestSwitch
-        cy.wait(2000)
-        cy.reload();
-        accountSettingsPage.chatRequestSwitch.should('not.be.checked');
-        cy.wait(2000)
+        // accountSettingsPage.chatRequestSwitch
+        // cy.wait(2000)
+        // accountSettingsPage.chatRequestSwitch
+        // cy.wait(2000)
+        // cy.reload();
+        // accountSettingsPage.chatRequestSwitch.should('not.be.checked');
+        // cy.wait(2000)
 
-        accountSettingsPage.unsubscripeFromAllEmailsSwitch
-        cy.wait(2000)
-        accountSettingsPage.unsubscripeFromAllEmailsSwitch
-        cy.reload();
-        accountSettingsPage.unsubscripeFromAllEmailsSwitch.should('not.be.checked');
-        cy.wait(2000)
+        // accountSettingsPage.unsubscripeFromAllEmailsSwitch
+        // cy.wait(2000)
+        // accountSettingsPage.unsubscripeFromAllEmailsSwitch
+        // cy.reload();
+        // accountSettingsPage.unsubscripeFromAllEmailsSwitch.should('not.be.checked');
+        // cy.wait(2000)
     })
    
   

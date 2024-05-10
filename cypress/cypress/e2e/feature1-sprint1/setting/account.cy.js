@@ -25,31 +25,34 @@ describe('account setting', () => {
     //   accountSettingsPage.saveEmailButton
     //   cy.wait(2000)
     //   accountSettingsPage.currentPasswordField.clear().should('be.visible').type("sama1212")
-    //   accountSettingsPage.newEmailField.should('be.visible').type( "Maram.mohamed01@eng-st.cu.edu.eg")
+    //   accountSettingsPage.newEmailField.clear().should('be.visible').type( "Maram.mohamed01@eng-st.cu.edu.eg")
     //   accountSettingsPage.saveEmailButton
     //   accountSettingsPage.gotitButton
    
-       
     // })
+
     // it('changing Password', () => {
     //     const accountSettingsPage = new AccountSettingsPage(); 
         
     //     accountSettingsPage.setButton
     //     accountSettingsPage.settButton
     //     accountSettingsPage.accountSet
+    //     cy.wait(2000)
     //     accountSettingsPage.changePasswordButton
-    //     accountSettingsPage. oldPasswordField.should('be.visible').type("1234567y")
+    //     cy.wait(2000)
+    //     accountSettingsPage.oldPasswordField.should('be.visible').type("1234567y")
     //     accountSettingsPage.newPasswordField.should('be.visible').type("1234")
     //     accountSettingsPage.confirmPasswordField.should('be.visible').type("1234")
     //     cy.wait(3000)
     //     accountSettingsPage.savePasswordButton
-    //     accountSettingsPage. oldPasswordField.should('be.visible').type("maram1212")
+    //     cy.wait(2000)
+    //     accountSettingsPage. oldPasswordField.should('be.visible').type("sama1212")
     //     accountSettingsPage.newPasswordField.should('be.visible').clear().type("123")
     //     accountSettingsPage.confirmPasswordField.should('be.visible').type("1234")
     //     accountSettingsPage.savePasswordButton
     //     cy.wait(3000)
-    //     accountSettingsPage.newPasswordField.clear().should('be.visible').clear().type("maram12122")
-    //     accountSettingsPage.confirmPasswordField.should('be.visible').clear().type("maram12122")
+    //     accountSettingsPage.newPasswordField.clear().should('be.visible').clear().type("sama1212")
+    //     accountSettingsPage.confirmPasswordField.should('be.visible').clear().type("sama1212")
     //     accountSettingsPage.savePasswordButton
     //     cy.wait(3000)
     //     accountSettingsPage.xPasswordButton
@@ -77,39 +80,43 @@ describe('account setting', () => {
     //     cy.get('.css-cyzh8z > .chakra-select__wrapper > .chakra-select').should('contain.text', 'Egypt');
     // })
 
-//     it('shows google login button', () => {
-//         const accountSettingsPage = new AccountSettingsPage(); 
-//         accountSettingsPage.setButton
-//         accountSettingsPage.settButton
-//         accountSettingsPage.accountSet
-//         accountSettingsPage.connectToGoogle
-//         accountSettingsPage. googlePass.should('be.visible').type("123")
-//         accountSettingsPage.googleContinueButton
-//         cy.wait(2000)
-//         accountSettingsPage. googlePass.should('be.visible').clear().type("maram1212")
-//         accountSettingsPage.googleContinueButton
-//         cy.wait(2000)
-//          accountSettingsPage.googleClose
-//     })
-
-    // it('delete your account', () => {
+    // it('shows google login button', () => {
     //     const accountSettingsPage = new AccountSettingsPage(); 
     //     accountSettingsPage.setButton
     //     accountSettingsPage.settButton
     //     accountSettingsPage.accountSet
+    //     accountSettingsPage.connectToGoogle
+    //     accountSettingsPage. googlePass.should('be.visible').type("123")
+    //     accountSettingsPage.googleContinueButton
+    //     cy.wait(2000)
+    //     accountSettingsPage. googlePass.should('be.visible').clear().type("sama1212")
+    //     accountSettingsPage.googleContinueButton
+    //     cy.wait(2000)
+    //      accountSettingsPage.googleClose
+    // })
+
+    //  it('delete your account', () => {
+    //     const accountSettingsPage = new AccountSettingsPage(); 
+    //     accountSettingsPage.setButton
+    //     accountSettingsPage.settButton
+    //     accountSettingsPage.accountSet
+    //     cy.wait(2000)
     //     accountSettingsPage.deleteAccountButton
+    //     cy.wait(2000)
     //     accountSettingsPage.deleteReason.type("Reason")
+    //     cy.wait(2000)
     //     accountSettingsPage.deleteUsername.type('maramtaek2')
+    //     cy.wait(2000)
     //     accountSettingsPage.deletePass.type('123')
-    //     accountSettingsPage.deleteCheck
-    //     accountSettingsPage.deleteRemoveButton
-    //     cy.wait(2000)
-    //     accountSettingsPage.deleteCancelButton
-    //     cy.wait(1000)
-    //     accountSettingsPage.deleteUsername.clear().type('maramtarek2')
-    //     accountSettingsPage.deletePass.clear().type('maram1212')
-    //     accountSettingsPage.deleteRemoveButton
-    //     cy.wait(2000)
-    //     accountSettingsPage.deleteRemoveButton
-    //})
+    // //     accountSettingsPage.deleteCheck
+    // //     accountSettingsPage.deleteRemoveButton
+    // //     cy.wait(2000)
+    // //     accountSettingsPage.deleteCancelButton
+    // //     cy.wait(1000)
+    // //     accountSettingsPage.deleteUsername.clear().type('maramtarek2')
+    // //     accountSettingsPage.deletePass.clear().type('maram1212')
+    // //     accountSettingsPage.deleteRemoveButton
+    // //     cy.wait(2000)
+    // //     accountSettingsPage.deleteRemoveButton
+    // })
 })

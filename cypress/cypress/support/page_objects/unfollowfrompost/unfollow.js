@@ -11,5 +11,8 @@ export class Unfollow{
     get followButton() {
         return cy.get('.popoverFollow').click({force:true});
     }
+    get searchforuser() {
+        return cy.get('#popover-trigger-\\:r3\\:').click();
+      }
 }
 export default new Unfollow();

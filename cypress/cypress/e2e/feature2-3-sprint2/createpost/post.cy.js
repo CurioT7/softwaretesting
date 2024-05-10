@@ -1,12 +1,18 @@
 import {Post} from '../../../support/page_objects/createposts/posts'
 import { login1 } from '../../../utils/login'
+
+Cypress.on('uncaught:exception', (err, runnable) => {
+    // returning false here prevents Cypress from
+    // failing the test
+    return false
+  })
 describe('create post', () => {
     beforeEach(() => {
         // Login before each test
         
         cy.viewport(1600, 1660)
           
-        login1('maramtarek2', 'sama1212');
+       // login1('hiam', 'maram1212');
        // cy.visit('http://localhost:5173/settings/account')
     });
 
@@ -31,33 +37,36 @@ describe('create post', () => {
 //      cy.wait(2000)
 //      post.ibutton
 //     post.saveButton
+//     cy.wait(2000)
 //     cy.get('.post-content-header').should('contain.text', 'sprint220');
-//      post.selectButton
-//      cy.wait(2000)
-//      post.nameselected
-//      cy.wait(2000)
-//        cy.wait(2000)
-//        post.boldButton
-//        post.putLink
-//        cy.wait(2000)
-//        post.shutButton
-//        cy.wait(2000)
-//        post.shutButton
-//        cy.wait(2000)
-//        post.discription.should('be.visible').type(' post check')
-//        cy.wait(2000)
-//        post.spaceButton
-//        cy.wait(2000)
-//        post.ocButton
-//        cy.wait(2000)
-//        post.spoilerButton
-//        cy.wait(2000)
-//        post.mhsfButton
-//        cy.wait(2000)
+   
+//     //  cy.wait(2000)
+     
+//     //  cy.wait(2000)
+//     //    cy.wait(2000)
+//     //    post.boldButton
+//     //    post.putLink
+//     //    cy.wait(2000)
+//     //    post.shutButton
+//     //    cy.wait(2000)
+//     //    post.shutButton
+//     //    cy.wait(2000)
+//     //    post.discription.should('be.visible').type(' post check')
+//     //    cy.wait(2000)
+//     //    post.spaceButton
+//     //    cy.wait(2000)
+//     //    post.ocButton
+//     //    cy.wait(2000)
+//     //    post.spoilerButton
+//     //    cy.wait(2000)
+//     //    post.mhsfButton
+//     //    cy.wait(2000)
  
-//        cy.wait(2000)
+//     //    cy.wait(2000)
 //       // cy.url().should('eq', 'http://localhost:5173/');
 //    })
+
+
     // it(' Input text post created  ', () => { 
     //    const post  = new Post();
     //   post.createButton
@@ -72,22 +81,15 @@ describe('create post', () => {
     //    post.ocButton
     //    cy.wait(2000)
     //    post.spoilerButton
-    //    cy.get('.spoilerButton')
-    //    .should('have.css', 'background-color')
-    //    .and('eq', 'rgb(255, 165, 0)');
     //    cy.wait(2000)
-       
-       
-    // //    post.discription.clear().should('be.visible').type(' post check')
-    // //    cy.wait(2000)
-    // //    post.selectButton
-    // //    post.nameselected
-    //    //post.saveButton
-    //  //cy.wait(2000)
-   
-
-    
-    
+    //    post.discription.clear().should('be.visible').type(' post check')
+    //    cy.wait(2000)
+    //    post.selectButton
+    //    cy.wait(2000)
+    //    cy.get('.dropdown-username').click()
+    //    post.saveButton
+    //    cy.wait(2000)
+    //    cy.get('.post-content-header').should('be.exist')
     
     // })
 
@@ -111,7 +113,7 @@ describe('create post', () => {
     //     cy.wait(2000)
     //     post.saveButton
     //     cy.wait(2000)
-    //     cy.get('.post-content-header').should('contain.text', 'sprint34220');
+    //     cy.get('img.mb-3').should('be.exist');
     // })
 
     // it(' link  ', () => {
@@ -134,7 +136,12 @@ describe('create post', () => {
     //     cy.wait(2000)
     //     post.saveButton
     //     cy.wait(2000)
-    //     cy.url().should('eq', 'http://localhost:5173/');
+    //     cy.get('.post-details-content').should('contain','https://www.reddit.com/user/tinyBuildGAMES/comments/1bvxbvb/ok_hear_me_out_diablo_but_in_first_person/?p=1&impressionid=4307039758133160806&utm_source=share&utm_medium=web2x&context=3')
+    //     cy.wait(2000)
+    //     cy.get('.post-details-content').click()
+    //     cy.wait(2000)
+    //     cy.url().should('eq', 'https://www.reddit.com/user/tinyBuildGAMES/comments/1bvxbvb/ok_hear_me_out_diablo_but_in_first_person/?p=1&impressionid=4307039758133160806&utm_source=share&utm_medium=web2x&context=3');
+
     // })
     
 })

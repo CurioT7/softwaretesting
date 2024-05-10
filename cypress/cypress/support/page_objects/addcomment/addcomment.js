@@ -9,6 +9,9 @@ export class Add{
         return cy.get(':nth-child(2) > .chakra-card > .chakra-card__body > .chakra-heading').click({force:true});
     }
     get comment(){return cy.get('.form-control')}
-    get add(){return cy.get('[data-testid="comment-confirm"]').click()}
+    get add(){return cy.get('[data-testid="comment-confirm"]').click({force:true})}
+    get searchforuser() {
+        return cy.get('#popover-trigger-\\:r3\\:').click();
+      }
 }
 export default new Add();

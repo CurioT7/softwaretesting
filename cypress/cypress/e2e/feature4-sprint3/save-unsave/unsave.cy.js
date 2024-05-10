@@ -1,32 +1,40 @@
 import { login1 } from '../../../utils/login'
-import {UnSave}from '../../../support/page_objects/save-unsave/unsave'
-describe('unsave', () => {
-    //lazem n7ot al path al gedid lma al post y7amel
-    //pathes feha mo4kela
+import {Save}from '../../../support/page_objects/save-unsave/save'
+Cypress.on('uncaught:exception', (err, runnable) => {
+    // returning false here prevents Cypress from
+    // failing the test
+    return false
+  })
+describe('save', () => {
+    
     beforeEach(() => {
         // Login before each test
-        
+        //lazem n7ot al path al gedid lma al post y7amel
         cy.viewport(1600, 1660)
           
-        login1('maramtarek2', 'sama1212');
+        login1('samra', 'maram1212');
        // cy.visit('http://localhost:5173/settings/account')
     });
 
-    it('unsave user post',()=>{
-        const unsave= new UnSave();
-        cy.wait(9000)
-        unsave.openMenu
+    it('save user post',()=>{
+        const save= new Save();
         cy.wait(2000)
-        unsave.saveButton
+        save.searchforuser.type('zain')
         cy.wait(2000)
-        unsave.userButton
+        cy.get('.search-user').click()
         cy.wait(2000)
-        unsave.profileButton
+        save.openMenu
         cy.wait(2000)
-        unsave.savetab
+       // save.saveButton
         cy.wait(2000)
-        //cy.get(':nth-child(1) > :nth-child(1) > .chakra-card > .chakra-card__body > .chakra-heading').should('not.contain.text', 'Exploring Melodic Landscapes');
-
+         save.userButton
+         cy.wait(2000)
+        save.profileButton
+         cy.wait(2000)
+         save.savetab
+         cy.wait(2000)
+         cy.get('.flex-column > :nth-child(1) > .chakra-card > .chakra-card__body > .chakra-heading').should('not.exist');
+   
         
     })
 

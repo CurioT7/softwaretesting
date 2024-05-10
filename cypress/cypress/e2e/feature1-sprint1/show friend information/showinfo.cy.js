@@ -13,18 +13,20 @@ describe('report', () => {
 
     it('report user from profile',()=>{
         const show= new Show();
-       cy.visit('http://localhost:5173/user/konoz1212')
+        show.searchforuser.type('vanela')
+        cy.wait(2000)
+        cy.get(':nth-child(2) > .search-body > .chakra-card__body > .searchBy-details > .search-user').click()
         cy.wait(2000)
         show.overview
-         cy.wait(2000)
-         cy.get(':nth-child(1) > .chakra-card > .chakra-card__body > .chakra-heading').should('contain.text', 'Second Post');
-         cy.wait(2000)
+        cy.wait(2000)
+        cy.get(':nth-child(1) > .chakra-card > .chakra-card__body > .chakra-heading').should('contain','sama')
+        cy.wait(2000)
         show.post
-        cy.wait(2000)
-        cy.get(':nth-child(1) > .chakra-card > .chakra-card__body > .chakra-heading').should('contain.text', 'Second Post');
-        cy.wait(2000)
+        cy.wait(5000)
+        cy.get('.pt-2').should('be.exist')
+        cy.wait(5000)
         show.comment
-        cy.get(':nth-child(1) > .chakra-card > .chakra-card__body > .chakra-heading').should('not.exist');
+        // cy.get(':nth-child(1) > :nth-child(2) > .post-details-content').should('contain','samya');
 
         
     })

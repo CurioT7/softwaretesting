@@ -7,6 +7,8 @@ export class HomePO {
     get hotButton(){return cy.get('[href="/Hot"]').click() }
     get topButton(){return cy.get('[href="/Top"]').click()}
     get bestButton(){return cy.get('[href="/Best"]').click() }
-get random(){return cy.get('[href="/Random"]').click({force:true})}
-}
+    get random() {
+        return cy.get('[href="/Random"]').click({ force: true });
+    }
+}    
 export default new HomePO();
