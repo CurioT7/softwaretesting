@@ -35,7 +35,7 @@ Click on E2E tests, then choose your preferred browser to run tests inside.
 # Link to Videos and Reports
 https://drive.google.com/drive/u/1/folders/1CB1CoExRW1W94gOmzXiMtas12Dq3DCwd
 
-#stress testing
+# stress testing
 
 download the Apache Jmeter zipfile via this link: https://jmeter.apache.org/download_jmeter.cgi
 After extracting the file:
