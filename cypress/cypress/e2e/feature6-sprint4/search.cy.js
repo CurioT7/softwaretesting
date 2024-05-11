@@ -100,53 +100,53 @@ describe('search', () => {
 
 
 
-    // it('search by sorting', () => {
-    //           const search = new Search();
-    //           cy.wait(7000)
-    //           search.searchbarButton
-    //           cy.wait(2000)
-    //           cy.get('.trending-header > span').should('contain', 'TRENDING TODAY')
-    //           cy.wait(2000)
-    //           cy.get(':nth-child(2) > .search-body > .chakra-card__body > :nth-child(1) > .trending-post-description').should('contain', 'Exploring the Latest Tech Trends')
-    //           cy.wait(2000)
-    //           search.trend
-    //           cy.wait(2000)
+    it('search by sorting', () => {
+              const search = new Search();
+              cy.wait(7000)
+              search.searchbarButton
+              cy.wait(2000)
+              cy.get('.trending-header > span').should('contain', 'TRENDING TODAY')
+              cy.wait(2000)
+              cy.get(':nth-child(2) > .search-body > .chakra-card__body > :nth-child(1) > .trending-post-description').should('contain', 'Exploring the Latest Tech Trends')
+              cy.wait(2000)
+              search.trend
+              cy.wait(2000)
 
-    //         //   search.sortButton
-    //         //   cy.wait(2000)
-    //         //   search.hotsort
-    //         //   cy.wait(2000)
-    //         //   cy.get(':nth-child(1) > .chakra-card > .chakra-card__body > .chakra-heading').should('contain', 'Exploring the Latest Tech Trends')
-    //         //   cy.wait(2000)
-    //         //   search.sortButton
-    //         //   cy.wait(2000)
-    //         //   search.newsort
-    //         //   cy.wait(2000)
-    //         //   cy.get(':nth-child(1) > .chakra-card > .chakra-card__body > .chakra-text').should('contain', 'Exploring the impact of AI on various industries and its potential for reshaping the future.')
+            //   search.sortButton
+            //   cy.wait(2000)
+            //   search.hotsort
+            //   cy.wait(2000)
+            //   cy.get(':nth-child(1) > .chakra-card > .chakra-card__body > .chakra-heading').should('contain', 'Exploring the Latest Tech Trends')
+            //   cy.wait(2000)
+            //   search.sortButton
+            //   cy.wait(2000)
+            //   search.newsort
+            //   cy.wait(2000)
+            //   cy.get(':nth-child(1) > .chakra-card > .chakra-card__body > .chakra-text').should('contain', 'Exploring the impact of AI on various industries and its potential for reshaping the future.')
               
-    //         search.sortButton
-    //           cy.wait(2000)
-    //           search.topsort
-    //           cy.wait(3000)
-    //           search.timesort
-    //           cy.wait(2000)
+            search.sortButton
+              cy.wait(2000)
+              search.topsort
+              cy.wait(3000)
+              search.timesort
+              cy.wait(2000)
 
-    //         //   search.pastyeartime
-    //         //   cy.wait(2000)
-    //         //   cy.get(':nth-child(1) > .chakra-card > .chakra-card__body > .chakra-heading').should('contain', 'Exploring the Latest Tech Trends')
-    //         //   cy.wait(2000)
+            //   search.pastyeartime
+            //   cy.wait(2000)
+            //   cy.get(':nth-child(1) > .chakra-card > .chakra-card__body > .chakra-heading').should('contain', 'Exploring the Latest Tech Trends')
+            //   cy.wait(2000)
 
-    //         // search.pastmonth
-    //         // cy.wait(2000)
-    //         // cy.get(':nth-child(1) > .chakra-card > .chakra-card__header > .css-k008qs > .css-1fp7af3 > .community-post-name').should('contain', 'testUser2')
-    //         // cy.wait(2000)
+            // search.pastmonth
+            // cy.wait(2000)
+            // cy.get(':nth-child(1) > .chakra-card > .chakra-card__header > .css-k008qs > .css-1fp7af3 > .community-post-name').should('contain', 'testUser2')
+            // cy.wait(2000)
 
-    //         //search.past24hr
+            //search.past24hr
 
-    //        // search.pasthour
+           // search.pasthour
 
 
 
-    //       })
+          })
    
 })

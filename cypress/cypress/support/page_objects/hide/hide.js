@@ -8,8 +8,9 @@ export class Hide{
     
     get profileButton(){return cy.get('.drop-down-profile-description').click()}
     get hidetab() {
-        return cy.get('#tabs-\\:r14l\\:--tab-4').click({ force: true });
+        return cy.get('#tabs-\\:r14p\\:--tab-4').click({ force: true });
     }
+    
     
     
     get unhideButton() {

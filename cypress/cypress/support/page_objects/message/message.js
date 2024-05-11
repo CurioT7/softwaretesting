@@ -26,8 +26,9 @@ export class Message{
         return cy.get('.private_message_body > .chakra-button').click();
     }
     get sent() {
-        return cy.get('#tabs-\\:r57\\:--tab-2').click();
+        return cy.get('#tabs-\\:r63\\:--tab-2').click();
     }
+    
     
     get usermention() {
         return cy.get('#tabs-\\:rh\\:--tab-4').click();

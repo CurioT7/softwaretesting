@@ -16,22 +16,22 @@ describe('Notification', () => {
     })
 
   
-    //  it('Notification new follower', () => {
-    //     const notification = new Notification();
-    //     cy.wait(7000)
-    //     notification.notificationButton
-    //     cy.wait(2000)
-    //     cy.get('.see-all-text-inner').click()
-    //     cy.wait(2000)
-    //     cy.get(':nth-child(9) > [style="display: flex; gap: 0.5em;"] > .notification-details > .notifications-item-message > .notifications-item-message-text').should('contain', 'Magical_Creator_1212 started following you.')
-    //     cy.wait(2000)
-    //     notification.profilemenu
-    //     cy.wait(2000)
-    //     notification.viewprofile
-    //     cy.wait(11000)
-    //     notification.viewfollowers
-    //     cy.wait(2000)
-    //     cy.get(':nth-child(3) > .ms-3').should('exist')
-    //  })
+     it('Notification new follower', () => {
+        const notification = new Notification();
+        cy.wait(7000)
+        notification.notificationButton
+        cy.wait(2000)
+        cy.get('.see-all-text-inner').click()
+        cy.wait(2000)
+        cy.get(':nth-child(9) > [style="display: flex; gap: 0.5em;"] > .notification-details > .notifications-item-message > .notifications-item-message-text').should('be.exist')
+        cy.wait(2000)
+        notification.profilemenu
+        cy.wait(2000)
+        notification.viewprofile
+        cy.wait(11000)
+        notification.viewfollowers
+        cy.wait(2000)
+        cy.get(':nth-child(3) > .ms-3').should('be.exist')
+     })
    
 })

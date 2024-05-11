@@ -7,7 +7,7 @@ describe('report', () => {
         
         cy.viewport(1600, 1660)
           
-        login1('samamostafa', 'sama1212');
+        login1('samamostafa', 'maram1212');
        // cy.visit('http://localhost:5173/settings/account')
     });
 

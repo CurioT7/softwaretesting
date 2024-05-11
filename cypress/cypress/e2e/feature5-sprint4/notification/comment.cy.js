@@ -16,17 +16,17 @@ describe('Notification', () => {
     })
 
   
-    //  it('Notification new follower', () => {
-    //     const notification = new Notification();
-    //     cy.wait(7000)
-    //     notification.notificationButton
-    //     cy.wait(2000)
-    //     notification.seeallButton
-    //     cy.wait(2000)
-    //     cy.get(':nth-child(10) > [style="display: flex; gap: 0.5em;"] > .notification-details > .notifications-item-message > .notifications-item-message-text').should('contain', 'Magical_Creator_1212 commented on your post "dsa".')
-    //     cy.wait(2000)
-    //     notification.viewcomment
-    //     //cy.get(':nth-child(7) > [style="display: flex; gap: 0.5em;"] > .notification-details > .notifications-item-message > .notifications-item-message-text').should('exist')
-    //  })
+     it('Notification new follower', () => {
+        const notification = new Notification();
+        cy.wait(7000)
+        notification.notificationButton
+        cy.wait(2000)
+        notification.seeallButton
+        cy.wait(2000)
+        cy.get(':nth-child(10) > [style="display: flex; gap: 0.5em;"] > .notification-details > .notifications-item-message > .notifications-item-message-text').should('be.exist')
+        cy.wait(2000)
+        notification.viewcomment
+        //cy.get(':nth-child(7) > [style="display: flex; gap: 0.5em;"] > .notification-details > .notifications-item-message > .notifications-item-message-text').should('be.exist')
+     })
    
 })

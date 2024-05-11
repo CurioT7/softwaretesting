@@ -20,71 +20,71 @@ describe('Communities', () => {
     });
 
 
-    // it('create Community', () => {
-    //     const createcommunity = new Createcommunity();
+    it('create Community', () => {
+        const createcommunity = new Createcommunity();
+        // // cy.visit('http://localhost:5173/')
+        cy.wait(5000)
+
+        createcommunity.createCommunityButton
+        cy.wait(2000)
+        createcommunity.addcommunity
+        createcommunity.nameField.type("december22av")
+        createcommunity.createCommunityButtonSave
+        createcommunity.cancelButton
+        //Createcommunity
+        cy.get('.align-self-end').should('contain.text', 'r/december22av')
+    })
+
+
+ it('view Community', () => {
+     const createcommunity = new Createcommunity();
     //     // // cy.visit('http://localhost:5173/')
-    //     cy.wait(5000)
+     cy.wait(5000)
 
-    //     createcommunity.createCommunityButton
-    //     cy.wait(2000)
-    //     createcommunity.addcommunity
-    //     createcommunity.nameField.type("december2")
-    //     createcommunity.createCommunityButtonSave
-    //     createcommunity.cancelButton
-    //     //Createcommunity
-    //     cy.get('.align-self-end').should('contain.text', 'r/december2')
-    // })
-
-
-//  it('view Community', () => {
-//      const createcommunity = new Createcommunity();
-//     //     // // cy.visit('http://localhost:5173/')
-//      cy.wait(5000)
-
-//      createcommunity.createCommunityButton
-//     cy.wait(2000)
-//     createcommunity.view
-//     cy.url().should('eq', 'http://localhost:5173/r/community2public');
+     createcommunity.createCommunityButton
+    cy.wait(2000)
+    createcommunity.view
+ 
     
-//      })
+     })
 
 
 
 
-    // it('create private Community', () => {
-    //     const createcommunity = new Createcommunity();
-    //     cy.wait(5000)
+    it('create private Community', () => {
+        const createcommunity = new Createcommunity();
+        cy.wait(5000)
 
-    //     createcommunity.createCommunityButton
-    //     createcommunity.addcommunity
-    //     createcommunity.nameField.type("flowery")
-    //     createcommunity.privateButton
-    //     createcommunity.matureSwitch
-    //     createcommunity.createCommunityButtonSave
-    //      cy.get('.align-self-end').should('contain.text', 'r/flowey')
-    // })
+        createcommunity.createCommunityButton
+        createcommunity.addcommunity
+        createcommunity.nameField.type("flowery2av")
+        createcommunity.privateButton
+        createcommunity.matureSwitch
+        createcommunity.createCommunityButtonSave
+         cy.get('.align-self-end').should('contain.text', 'r/flowey2av')
+    })
 
-    //  it('view private Community', () => {
-    //  const createcommunity = new Createcommunity();
-    // //     // // cy.visit('http://localhost:5173/')
-    //  cy.wait(5000)
+     it('view private Community', () => {
+     const createcommunity = new Createcommunity();
+    //     // // cy.visit('http://localhost:5173/')
+     cy.wait(5000)
 
-    //  createcommunity.createCommunityButton
-    // cy.wait(2000)
-    // createcommunity.view2
-    // cy.url().should('eq', 'http://localhost:5173/r/community23priv');
+     createcommunity.createCommunityButton
+    cy.wait(2000)
+    createcommunity.view2
     
-    //  })
+    
+     })
 
-    // it('create private Community', () => {
-    //     const createcommunity = new Createcommunity();
-    //     cy.wait(3000)
+    it('create private Community', () => {
+        const createcommunity = new Createcommunity();
+        cy.wait(3000)
 
-    //     createcommunity.createCommunityButton
-    //     createcommunity.addcommunity
-    //     createcommunity.nameField.type("sundayd")
-    //     createcommunity.restrictedButton.click()
-    //     createcommunity.createCommunityButtonSave
-    //     cy.get('.align-self-end').should('contain.text', 'r/sundayd')
-    // })
+        createcommunity.createCommunityButton
+        createcommunity.addcommunity
+        createcommunity.nameField.type("sundayd2as")
+        createcommunity.restrictedButton.click()
+        createcommunity.createCommunityButtonSave
+        cy.get('.align-self-end').should('contain.text', 'r/sundayd2as')
+    })
 })

@@ -26,20 +26,20 @@ describe('emails', () => {
         accountSettingsPage.newFollowersEmailSwitch.should('not.be.checked');
         cy.wait(2000)
 
-        // accountSettingsPage.chatRequestSwitch
-        // cy.wait(2000)
-        // accountSettingsPage.chatRequestSwitch
-        // cy.wait(2000)
-        // cy.reload();
-        // accountSettingsPage.chatRequestSwitch.should('not.be.checked');
-        // cy.wait(2000)
+        accountSettingsPage.chatRequestSwitch
+        cy.wait(2000)
+        accountSettingsPage.chatRequestSwitch
+        cy.wait(2000)
+        cy.reload();
+        accountSettingsPage.chatRequestSwitch.should('not.be.checked');
+        cy.wait(2000)
 
-        // accountSettingsPage.unsubscripeFromAllEmailsSwitch
-        // cy.wait(2000)
-        // accountSettingsPage.unsubscripeFromAllEmailsSwitch
-        // cy.reload();
-        // accountSettingsPage.unsubscripeFromAllEmailsSwitch.should('not.be.checked');
-        // cy.wait(2000)
+        accountSettingsPage.unsubscripeFromAllEmailsSwitch
+        cy.wait(2000)
+        accountSettingsPage.unsubscripeFromAllEmailsSwitch
+        cy.reload();
+        accountSettingsPage.unsubscripeFromAllEmailsSwitch.should('not.be.checked');
+        cy.wait(2000)
     })
    
   

@@ -25,15 +25,15 @@ describe('save', () => {
         cy.wait(2000)
         save.openMenu
         cy.wait(2000)
-        //save.saveButton
+        save.saveButton
         cy.wait(2000)
          save.userButton
          cy.wait(2000)
         save.profileButton
          cy.wait(2000)
-         save.savetab
+         save.tab
          cy.wait(2000)
-         cy.get('.flex-column > :nth-child(1) > .chakra-card > .chakra-card__body > .chakra-heading').should('not.exist');
+         cy.get('.flex-column > :nth-child(1) > .chakra-card > .chakra-card__body > .chakra-heading').should('be.exist');
    
         
     })

@@ -9,8 +9,13 @@ export class Save{
     
     get profileButton(){return cy.get('.drop-down-profile-description').click()}
     get savetab() {
-        return cy.get('#tabs-\\:r14l\\:--tab-3').click({ force: true });
+        return cy.get('#tabs-\\:r14p\\:--tab-3').click({ force: true });
     }
+    get tab() {
+        cy.get('#tabs-\\:r14p\\:--tab-3').click({ force: true });
+    }
+    
+    
     
     get searchforuser() {
         return cy.get('#popover-trigger-\\:r3\\:').click();

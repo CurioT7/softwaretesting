@@ -25,7 +25,7 @@ describe('save', () => {
         cy.wait(2000)
         save.openMenu
         cy.wait(2000)
-       // save.saveButton
+        save.saveButton
         cy.wait(2000)
          save.userButton
          cy.wait(2000)

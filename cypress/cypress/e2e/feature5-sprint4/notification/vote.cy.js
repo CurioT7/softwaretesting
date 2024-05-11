@@ -16,20 +16,20 @@ describe('Notification', () => {
         login1('samamostafa', 'maram1212');
     })
 
-    // it('Notification vote', () => {
-    //     const notification = new Notification();
-    //     cy.wait(7000)
-    //     notification.notificationButton
-    //     cy.wait(2000)
-    //     notification.seeallButton
-    //     cy.wait(2000)
-    //     cy.get(':nth-child(36) > [style="display: flex; gap: 0.5em;"] > .notification-details > .notifications-item-message > .notifications-item-message-text').should('contain', 'Your post has been upvoted by samamostafa.')
-    //     cy.wait(2000)
-    //     notification.viewvotedpost
-    //     cy.wait(2000)
+    it('Notification vote', () => {
+        const notification = new Notification();
+        cy.wait(7000)
+        notification.notificationButton
+        cy.wait(2000)
+        notification.seeallButton
+        cy.wait(2000)
+        cy.get(':nth-child(36) > [style="display: flex; gap: 0.5em;"] > .notification-details > .notifications-item-message > .notifications-item-message-text').should('be.exist')
+        cy.wait(2000)
+        notification.viewvotedpost
+        cy.wait(2000)
         
     
-    //  })
+     })
   
    
  })

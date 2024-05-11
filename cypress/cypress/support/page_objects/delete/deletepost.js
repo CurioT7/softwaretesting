@@ -12,9 +12,10 @@ export class Post{
     }
     get profile(){return cy.get('.drop-down-profile-description').click({force:true})}
     get openmenu() {
-        return cy.get('#tabs-\\:rv5\\:--tabpanel-0 > :nth-child(4) > :nth-child(1) > .chakra-card > .chakra-card__header > .css-k008qs > :nth-child(2) > .post-dropdown-control')
+        return cy.get('#tabs-\\:rvj\\:--tabpanel-0 > :nth-child(4) > :nth-child(1) > .chakra-card > .chakra-card__header > .css-k008qs > :nth-child(2) > .post-dropdown-control')
             .click();
     }
+    
     
     get deletePost() {
         return cy.get(':nth-child(4) > div > .mt-3').click();

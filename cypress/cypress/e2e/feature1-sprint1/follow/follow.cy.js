@@ -13,26 +13,26 @@ describe('Follow test site', () => {
 
   
 
-    // it('follow and unfollow a user', () => {
-    //     const followpage = new FollowPage();
-    //     cy.wait(2000)
-    //     // followpage.searchforuser.type('maramtarek2')
-    //     // cy.wait(2000)
-    //     // cy.get(':nth-child(2) > .search-body > .chakra-card__body > .searchBy-details > .search-user').click()
-    //     // cy.wait(2000)
-    //     // followpage.followButton
-    //     // cy.wait(2000)
-    //     login1('maramtarek2', 'sama1212');
-    //     followpage.viewprofile
-    //     cy.wait(2000)
-    //     followpage.profile
-    //     cy.wait(9000)
-    //     cy.wait(9000)
-    //     cy.wait(9000)
-    //     cy.get('[style="display: grid; grid-template-columns: repeat(2, 1fr); grid-template-rows: repeat(2, 0.5fr); gap: 0.3rem 1rem;"] > a').click()
-    //     cy.wait(2000)
-    //     cy.get(':nth-child(3) > .ms-3').should('be.exist')
+    it('follow and unfollow a user', () => {
+        const followpage = new FollowPage();
+        cy.wait(2000)
+        followpage.searchforuser.type('maramtarek2')
+        cy.wait(2000)
+        cy.get(':nth-child(2) > .search-body > .chakra-card__body > .searchBy-details > .search-user').click()
+        cy.wait(2000)
+        // followpage.followButton
+        // cy.wait(2000)
+        login1('maramtarek2', 'sama1212');
+        followpage.viewprofile
+        cy.wait(2000)
+        followpage.profile
+        cy.wait(9000)
+        cy.wait(9000)
+        cy.wait(9000)
+        cy.get('[style="display: grid; grid-template-columns: repeat(2, 1fr); grid-template-rows: repeat(2, 0.5fr); gap: 0.3rem 1rem;"] > a').click()
+        cy.wait(2000)
+        cy.get(':nth-child(3) > .ms-3').should('be.exist')
   
-    // })
+    })
     
 })

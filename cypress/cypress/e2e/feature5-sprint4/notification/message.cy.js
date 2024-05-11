@@ -16,16 +16,16 @@ describe('Notification', () => {
     })
 
   
-    //  it('Notification new follower', () => {
-    //     const notification = new Notification();
-    //     cy.wait(7000)
-    //     notification.notificationButton
-    //     cy.wait(2000)
-    //    notification.message
-    //    cy.wait(2000)
-    //    cy.get('.message-title').should('contain', 'hello:')
+     it('Notification new follower', () => {
+        const notification = new Notification();
+        cy.wait(7000)
+        notification.notificationButton
+        cy.wait(2000)
+       notification.message
+       cy.wait(2000)
+       cy.get('.message-title').should('contain', 'hello:')
 
         
-    //  })
+     })
    
 })

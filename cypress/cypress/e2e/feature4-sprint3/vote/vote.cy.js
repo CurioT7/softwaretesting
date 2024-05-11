@@ -16,36 +16,36 @@ describe('vote', () => {
         login1('samra', 'maram1212');
     })
 
-    // it('vote', () => {
-    //     const vote = new Vote();
-    //     cy.wait(7000)
-    //     vote.searchforuser.type('zain')
-    //     cy.wait(2000)
-    //     cy.get('.search-user').click()
-    //     cy.wait(2000)
-    //     vote.voteButton
-    //     cy.wait(4000)
-    //     cy.get(':nth-child(6) > .chakra-card > .chakra-card__footer > .css-8owaep > .d-flex > [data-testid="upvotes"] > svg').should('be.exist')
+    it('vote', () => {
+        const vote = new Vote();
+        cy.wait(7000)
+        vote.searchforuser.type('zain')
+        cy.wait(2000)
+        cy.get('.search-user').click()
+        cy.wait(2000)
+        vote.voteButton
+        cy.wait(4000)
+        cy.get(':nth-child(6) > .chakra-card > .chakra-card__footer > .css-8owaep > .d-flex > [data-testid="upvotes"] > svg').should('be.exist')
         
        
         
-    //  })
+     })
 
-    //  it('downvote', () => {
-    //     const vote = new Vote();
-    //     cy.wait(7000)
-    //     vote.searchforuser.type('zain')
-    //     cy.wait(2000)
-    //     cy.get('.search-user').click()
-    //     cy.wait(2000)
-    //     vote.downvoteButton
-    //     cy.wait(4000)
-    //     cy.get(':nth-child(6) > .chakra-card > .chakra-card__footer > .css-8owaep > .d-flex > [data-testid="downvotes"] > svg > path').should('be.exist')
+     it('downvote', () => {
+        const vote = new Vote();
+        cy.wait(7000)
+        vote.searchforuser.type('zain')
+        cy.wait(2000)
+        cy.get('.search-user').click()
+        cy.wait(2000)
+        vote.downvoteButton
+        cy.wait(4000)
+        cy.get(':nth-child(6) > .chakra-card > .chakra-card__footer > .css-8owaep > .d-flex > [data-testid="downvotes"] > svg > path').should('be.exist')
         
       
        
         
-    //  })
+     })
 
    
 })
