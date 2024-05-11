@@ -2,7 +2,7 @@ import pytest
 from appium import webdriver
 from appium.webdriver.common.appiumby import AppiumBy
 from appium.options.common import AppiumOptions
-from appium.webdriver.common.touch_action  import TouchAction
+# from appium.webdriver.common.touch_action  import TouchAction
 from time import sleep 
 from typing import Any, Dict
 
@@ -31,8 +31,8 @@ doneButton_Xpath_report=""
 
 
 
-def block_unblockuser():
-    driver.find_element(by=AppiumBy.xpath,value=userButton_Xpath_report="").click()
+def report_user():
+    driver.find_element(by=AppiumBy.xpath,value=userButton_Xpath_report).click()
     userButton= driver.find_element(by=AppiumBy.xpath,value="").click()
     userButton.click()
     sleep(2)
