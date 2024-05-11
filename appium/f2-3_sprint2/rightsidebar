@@ -1,0 +1,87 @@
+import pytest 
+from appium import webdriver
+from appium.webdriver.common.appiumby import AppiumBy
+from appium.options.common import AppiumOptions
+# from appium.webdriver.common.touch_action  import TouchAction
+from time import sleep 
+from typing import Any, Dict
+
+desired_caps: Dict[str,Any] = {
+
+  "platformName": "Android",
+    "appium:platformVe": "14",
+    "appium:deviceName": "emulator-5554",
+    "appium:automationName": "Uiautomator2",
+    # "appium:app": "C:\\Users\\samae\\OneDrive\\Desktop\\sprint2_2\\cross\\Cross-Platform-main\\build\\app\\outputs\\apk\\debug\\app-debug.apk",
+    "adbExecTimeout": 60000
+}
+
+
+url ='http://ocalhost:4723'
+driver= webdriver.remote(url, options=AppiumOptions().load_capabilities(desired_caps))
+
+#lockers
+post_dropdown=""
+post_save_button=""
+commnets_onpost=""
+commnets_save_button=""
+
+history_sb_button=""
+history_sort_button=""
+history_recent=""
+history_upvote=""
+history_downvote=""
+history_hidden=""
+post_upvote=""
+post_downvote=""
+post_hide=""
+
+
+
+def savedpost():
+    driver.find_element(by=AppiumBy.XPATH, value=post_dropdown).click()
+    savepost = driver.find_element(by=AppiumBy.XPATH, value=post_save_button)
+    savepost.click()
+    sleep(2)
+
+    comments=driver.find_element(by=AppiumBy.XPATH, value=commnets_onpost)
+    comments.click()
+    savecomment=driver.find_element(by=AppiumBy.XPATH, value=commnets_save_button)
+    savecomment.click()
+
+driver.quit()
+
+
+def History():
+    upvotes=driver.find_element(by=AppiumBy.XPATH, value=post_upvote)
+    upvotes.click()
+    sleep(2)
+
+    downvotes=driver.find_element(by=AppiumBy.XPATH, value=post_downvote)
+    downvotes.click()
+    sleep(2)
+
+    hidepost= driver.find_element(by=AppiumBy.XPATH, value=post_hide)
+    hidepost.click()
+    sleep(2)
+
+    history=driver.find_element(by=AppiumBy.XPATH, value=history_sb_button)
+    history.click()
+    sleep(2)
+    recent=driver.find_element(by=AppiumBy.XPATH, value=history_recent)
+    recent.click()
+    sleep(2)
+
+    histupvotes=driver.find_element(by=AppiumBy.XPATH, value=history_upvote)
+    histupvotes.click()
+    sleep(2)
+
+    histdownvotes=driver.find_element(by=AppiumBy.XPATH, value=history_downvote)
+    histdownvotes.click()
+    sleep(2)
+
+    histhidden= driver.find_element(by=AppiumBy.XPATH, value=history_hidden)
+    histhidden.click()
+    sleep(2)
+
+driver.quit()
