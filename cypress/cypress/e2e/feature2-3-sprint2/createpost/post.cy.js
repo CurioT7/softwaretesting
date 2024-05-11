@@ -20,7 +20,7 @@ describe('create post', () => {
         const post  = new Post();
        post.createButton
        cy.wait(2000)
-    post.title.should('be.visible').type('sprint220{enter}')
+    post.title.should('be.visible').type('sprint2345fv20{enter}')
      cy.wait(2000)
     post.discription.type('create ')
     cy.wait(2000)
@@ -71,7 +71,7 @@ describe('create post', () => {
        const post  = new Post();
       post.createButton
        cy.wait(2000)
-    post.title.should('be.visible').type('sprint27fg20{enter}')
+    post.title.should('be.visible').type('sprint2rgt7fg20{enter}')
      cy.wait(2000)
      post.discription.should('be.visible').type(' post check')
      cy.wait(2000)
@@ -101,7 +101,7 @@ describe('create post', () => {
         //post.selectButton
        // cy.wait(2000)
         //post.nameselected
-        post.title.should('be.visible').type('sprint34220{enter}')
+        post.title.should('be.visible').type('sprint34vds220{enter}')
         cy.wait(2000)
         post.avatar
         cy.wait(2000)
@@ -125,7 +125,7 @@ describe('create post', () => {
         // post.nameselected
         cy.wait(2000)
         post.link
-        post.name.should('be.visible').type('reddit post')
+        post.name.should('be.visible').type('reddit po23st')
         cy.wait(2000)
         post.url.should('be.visible').type('https://www.reddit.com/user/tinyBuildGAMES/comments/1bvxbvb/ok_hear_me_out_diablo_but_in_first_person/?p=1&impressionid=4307039758133160806&utm_source=share&utm_medium=web2x&context=3')
         post.ocButton
