@@ -38,7 +38,7 @@ describe('create post', () => {
      post.ibutton
     post.saveButton
     cy.wait(2000)
-    cy.get('.post-content-header').should('contain.text', 'sprint220');
+    cy.get('.post-content-header').should('contain.text', 'sprint2345fv20');
    
     //  cy.wait(2000)
      
