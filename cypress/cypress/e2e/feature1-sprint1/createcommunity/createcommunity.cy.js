@@ -28,11 +28,11 @@ describe('Communities', () => {
         createcommunity.createCommunityButton
         cy.wait(2000)
         createcommunity.addcommunity
-        createcommunity.nameField.type("december22av")
+        createcommunity.nameField.type("december22avyyyyyyy")
         createcommunity.createCommunityButtonSave
         createcommunity.cancelButton
         //Createcommunity
-        cy.get('.align-self-end').should('contain.text', 'r/december22av')
+        cy.get('.align-self-end').should('contain.text', 'r/december22avyyyyyyy')
     })
 
 
@@ -57,11 +57,11 @@ describe('Communities', () => {
 
         createcommunity.createCommunityButton
         createcommunity.addcommunity
-        createcommunity.nameField.type("flowery2av")
+        createcommunity.nameField.type("flowery2av1212")
         createcommunity.privateButton
         createcommunity.matureSwitch
         createcommunity.createCommunityButtonSave
-         cy.get('.align-self-end').should('contain.text', 'r/flowey2av')
+         cy.get('.align-self-end').should('contain.text', 'r/flowey2av1212')
     })
 
      it('view private Community', () => {
@@ -82,9 +82,9 @@ describe('Communities', () => {
 
         createcommunity.createCommunityButton
         createcommunity.addcommunity
-        createcommunity.nameField.type("sundayd2as")
+        createcommunity.nameField.type("sundayd2as1212")
         createcommunity.restrictedButton.click()
         createcommunity.createCommunityButtonSave
-        cy.get('.align-self-end').should('contain.text', 'r/sundayd2as')
+        cy.get('.align-self-end').should('contain.text', 'r/sundayd2as1212')
     })
 })
