@@ -33,6 +33,16 @@ search_community_feild=""
 community_name=""
 post_button=""
 
+mainpage_post=""
+dropdown_menue=""
+edit_post=""
+text_feild=""
+submit_edit_button=""
+save_post=""
+upvote_post_button=""
+downvote_post_button=""
+
+
 
 def createpost():
     driver.find_element(by=AppiumBy.XPATH, value=createpost_button).click()
@@ -67,3 +77,37 @@ def createpost():
 
 driver.quit()
 
+def editpost():
+    driver.find_element(by=AppiumBy.XPATH, value=mainpage_post).click()
+    menue=driver.find_element(by=AppiumBy.XPATH, value=dropdown_menue)
+    menue.click()
+    sleep(2)
+
+    edit = driver.find_element(by=AppiumBy.XPATH, value=edit_post)
+    edit.click()
+    sleep(2)
+
+    text=driver.find_element(by=AppiumBy.XPATH, value=text_feild)
+    text.click()
+    sleep(2)
+    text.send_keys('')
+    sleep(3)
+
+    submit=text=driver.find_element(by=AppiumBy.XPATH, value=submit_edit_button)
+    submit.click()
+    sleep(2)
+
+driver.quit()
+
+def upvote_downvote_post():
+    driver.find_element(by=AppiumBy.XPATH, value=mainpage_post).click()
+    upvote=driver.find_element(by=AppiumBy.XPATH, value=upvote_post_button)
+    upvote.click()
+    sleep(2)
+
+    downvote=driver.find_element(by=AppiumBy.XPATH, value=downvote_post_button)
+    downvote.click()
+    sleep(2)
+
+driver.quit()
+    
